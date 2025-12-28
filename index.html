@@ -1,51 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Demo Marketing Agency</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Vehicle Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container">
-    <span class="navbar-brand">Demo Marketing Agency</span>
-  </div>
-</nav>
+<div class="container">
+    <h1>Vehicle Registration Form</h1>
 
-<section class="hero text-center">
-  <div class="container">
-    <h1>Grow Your Business Online</h1>
-    <p>Performance driven digital marketing solutions</p>
-    <a href="#contact" class="btn btn-primary">Get Started</a>
-  </div>
-</section>
+    <form>
+        <label>Title</label>
+        <select>
+            <option>Select</option>
+            <option>Mr</option>
+            <option>Ms</option>
+            <option>Mrs</option>
+        </select>
 
-<section class="container my-5">
-  <h2 class="text-center">Why Choose Us?</h2>
-  <div class="row text-center mt-4">
-    <div class="col-md-4">Lead Generation</div>
-    <div class="col-md-4">SEO Optimized</div>
-    <div class="col-md-4">Fast Performance</div>
-  </div>
-</section>
+        <label>Customer Name</label>
+        <input type="text" placeholder="Enter name">
 
-<section id="contact" class="container my-5">
-  <h2 class="text-center">Contact Us</h2>
-  <form class="mt-4">
-    <input class="form-control mb-3" placeholder="Name">
-    <input class="form-control mb-3" placeholder="Email">
-    <input class="form-control mb-3" placeholder="Phone">
-    <button class="btn btn-success w-100">Submit</button>
-  </form>
-</section>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
 
-<footer class="bg-dark text-white text-center p-3">
-  © 2025 Demo Marketing Agency
-</footer>
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <label>Vehicle Number</label>
+        <input type="text">
+
+        <label>Vehicle Model</label>
+        <input type="text">
+
+        <label>Manufacturing Year</label>
+        <input type="date">
+
+        <button type="submit">Register Vehicle</button>
+    </form>
+</div>
 
 </body>
 </html>
